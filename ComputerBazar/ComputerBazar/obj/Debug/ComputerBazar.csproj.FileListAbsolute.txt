@@ -1,0 +1,8 @@
+C:\Users\VIKRAM\documents\visual studio 2010\Projects\ComputerBazar\ComputerBazar\bin\ComputerBazar.dll
+C:\Users\VIKRAM\documents\visual studio 2010\Projects\ComputerBazar\ComputerBazar\bin\ComputerBazar.pdb
+C:\Users\VIKRAM\documents\visual studio 2010\Projects\ComputerBazar\ComputerBazar\obj\Debug\ComputerBazar.dll
+C:\Users\VIKRAM\documents\visual studio 2010\Projects\ComputerBazar\ComputerBazar\obj\Debug\ComputerBazar.pdb
+C:\Users\VIKRAM\documents\visual studio 2010\Projects\ComputerBazar\ComputerBazar\obj\Debug\ComputerBazar.csprojResolveAssemblyReference.cache
+G:\OLD HDD\Tutorials\Projects\Visual Studio 2010\Projects\ComputerBazar\ComputerBazar\obj\Debug\ComputerBazar.csprojResolveAssemblyReference.cache
+G:\OLD HDD\Tutorials\Projects\Visual Studio 2010\Projects\ComputerBazar\ComputerBazar\obj\Debug\ComputerBazar.dll
+G:\OLD HDD\Tutorials\Projects\Visual Studio 2010\Projects\ComputerBazar\ComputerBazar\obj\Debug\ComputerBazar.pdb

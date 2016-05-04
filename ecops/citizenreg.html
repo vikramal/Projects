@@ -1,0 +1,291 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<!-- link calendar resources -->
+	<link rel="stylesheet" type="text/css" href="tcal.css" />
+	<script type="text/javascript" src="tcal.js"></script> 
+	
+<script language="javascript">
+
+function validate(x)
+{
+	if(x.username_txt.value=="")
+	{
+		alert("Please choose your Username");
+		x.username_txt.focus();
+		return false;
+	}
+
+	if(x.password_txt.value=="")
+	{
+		alert("Password cannot be left blank");
+		x.password_txt.focus();
+		return false;
+	}
+
+	if(x.password_txt.value.length<6)
+	{
+		alert("Password must be atleast 6 characters long");
+		x.password_txt.focus();
+		return false;
+	}
+		
+	if(x.retypepassword_txt.value=="")
+	{
+		alert("Retype password Cannot be left blank.");
+		x.retypepassword_txt.focus();
+		return false;
+	}
+
+	if(!(x.retypepassword_txt.value==x.password_txt.value))
+	{
+		alert("Passwords do not match");
+		x.retypepassword_txt.focus();
+		return false;
+	}
+	if(x.name_txt.value=="")
+	{
+		alert("Name cannot be left blank");
+		x.name_txt.focus();
+		return false;
+	}
+
+	if(x.gender_rdo.value=="")
+	{
+		alert("Select the Gender.");
+		return false;
+	}
+
+	if(x.fathername_txt.value=="")
+	{
+		alert("Father's Name cannot be left blank");
+		x.fathername_txt.focus();
+		return false;
+	}
+	if(x.address_txt.value=="")
+	{
+		alert("Please enter your Address");
+		x.address_txt.focus();
+		return false;
+	}
+	if(x.landmark_txt.value=="")
+	{
+		alert("Specify the nearest landmark");
+		x.landmark_txt.focus();
+		return false;
+	}
+	if(x.city_txt.value=="")
+	{
+		alert("Please enter the City");
+		x.city_txt.focus();
+		return false;
+	}
+	if(x.pincode_txt.value=="")
+	{
+		alert("Pin Code cannot be left blank");
+		x.pincode_txt.focus();
+		return false;
+	}
+	if(x.pincode_txt.value.length<6)
+	{
+		alert("Pin Code you entered is Incorrect");
+		x.pincode_txt.focus();
+		return false;
+	}
+	if(x.nationality_txt.value=="")
+	{
+		alert("Specify your Nationality");
+		x.nationality_txt.focus();
+		return false;
+	}
+	if(x.mobilenum_txt.value=="")
+	{
+		alert("Please enter your Mobile Number");
+		x.mobilenum_txt.focus();
+		return false;
+	}
+
+	if(x.mobilenum_txt.value.length<10)
+	{
+		alert("Incorrect Mobile No. Enter again");
+		x.mobilenum_txt.focus();
+		return false;
+	}
+
+	if(x.landlinenum_txt.value=="")
+	{
+		alert("Please enter your Landline Number");
+		x.landlinenum_txt.focus();
+		return false;
+	}
+
+	if(x.landlinenum_txt.value.length<11)
+	{
+		alert("Incorrect Landline No. Enter again");
+		x.landlinenum_txt.focus();
+		return false;
+	}
+
+	if(x.email_txt.value=="")
+	{
+		alert("Please enter E-Mail ID");
+		x.email_txt.focus();
+		return false;
+	}
+
+	if (x.email_txt.value.indexOf('@')==-1 || x.email_txt.value.indexOf('.')==-1 || x.email_txt.value.indexOf(' ')!=-1 || x.email_txt.value.lastIndexOf('@')>x.email_txt.value.lastIndexOf('.') || x.email_txt.value.indexOf('@')!=x.email_txt.value.lastIndexOf('@') || x.email_txt.value.indexOf('@')==0)
+	{ 
+		alert("This email id does not appear to be a valid one.")
+		x.email_txt.focus()
+		return false;
+	}
+
+	if(x.doccument_txt.value=="")
+	{
+		alert("Please select the document.");
+		x.doccument_txt.focus();
+		return false;
+	}
+	
+return true;
+}
+
+function numeric()
+{
+	if(!((event.keyCode>=48)&&(event.keyCode<=57)))
+	{
+		alert("Enter only numbers");
+		event.keyCode=0;
+	}
+}
+
+function alphabets()
+{
+	if(!(((event.keyCode>65)&&(event.keyCode<=91))||((event.keyCode>=97)&&(event.keyCode<=122))||(event.keyCode==32)))
+	{
+		alert("Numbers & Special characters not allowed");
+		event.keyCode=0;
+	}
+	
+}
+</script>
+	
+<link rel="stylesheet" href="images/BluePigment.css" type="text/css" />
+<title>Welcome to E - Cops (E-Computerized Operations for Police Services).</title>
+</head>
+<body>
+<!-- header starts here -->
+<div id="header">
+  <div id="header-content">
+    <marquee allign="middle" behaviour="slide" direction="left"><b><h3>Welcome to E - Cops ( E-Computerized Operations for Police Services).</b></h3></marquee>
+	<br><br><br>
+    <br><h1 id="logo-text"><a href="index.html" title=""><align=center>&nbsp&nbsp&nbsp E - <span> Cops</span></align></a></h1>
+    <h2 id="slogan">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp A Computised operations of Police Services.</h2>
+    <div id="header-links">
+      <p> <img src="images\logo.jpg" </p>
+    </div>
+  </div>
+</div>
+<!-- navigation starts here -->
+
+
+<div id="nav-wrap">
+  <div id="nav">
+    <ul>
+      <li><a href="homepage.html">Homepage</a></li>
+      <li><a href="adminlogin.html">Admin Login</a></li>
+      <li><a href="citizenlogin.html">Citizen Login</a></li>
+      <li id="current"><a href="citizenreg.html">Citizen Registration</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</div>
+  <!-- footer ends-->
+<div id="content-wrap">
+  <div id="content">
+    <div id="sidebar">
+		<p style="margin-left="250px;"><br><br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img width=180 height=850 src="images/slide.jpg"></p>
+      <div class="sidebox">
+      </div>
+	</div>
+</div>
+<br>
+<br>
+<div id="main">
+<div class="box">
+<center>
+<form name="citizenreg" method="post" action="citizenreg.jsp" onsubmit="return validate(this)">
+<br>
+<h1><img src="images\cp.png">Citizen Registration Form.</img></h1>
+<table border=2 >
+<tr>
+<td><center>Username</center></td><br>
+<td><center><input type="text" name="username_txt" maxlength="15">
+</tr>
+<tr>
+<td><center>Password</center></td>
+<td><center><input type="password" name="password_txt" maxlength="15">
+</tr>
+<tr>
+<td><center>Re-type Password</center></td>
+<td><center><input type="password" name="retypepassword_txt" maxlength="15">
+</tr>
+<tr>
+<td><center>Name</center></td>
+<td><center><input type="text" name="name_txt" onkeypress="alphabets()" maxlength="25">
+</tr>
+<tr>
+<td><center>Gender</center></td>
+<td><center><input type="radio" name="gender_rdo" value="male"> Male &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="gender_rdo" value="female"> Female
+</tr>
+<tr>
+<td><center>Father Name</center></td>
+<td><center><input type="text" name="fathername_txt" onkeypress="alphabets()" maxlength="20">
+</tr>
+<tr>
+<td><center>Address</center></td>
+<td><center><textarea  cols="46" rows="1" name="address_txt"></textarea>
+</tr>
+<tr>
+<td><center>Landmark</center></td>
+<td><center><input type="text" name="landmark_txt">
+</tr>
+<tr>
+<td><center>City</center></td>
+<td><center><input type="text" name="city_txt" onkeypress="alphabets()">
+</tr>
+<tr>
+<td><center>Pincode</center></td>
+<td><center><input type="text" name="pincode_txt" maxlength="6" onkeypress="numeric()">
+</tr>
+<tr>
+<td><center>Nationality</center></td>
+<td><center><input type="text" name="nationality_txt" onkeypress="alphabets()">
+</tr>
+<tr>
+<td><center>Date of Birth</center></td>
+<td><center><input type="text" name="dateofbirth_txt" class="tcal" value="">
+</tr>
+<tr>
+<td><center>Mobile Number</center></td>
+<td><center><input type="text" name="mobilenum_txt" maxlength="10" onkeypress="numeric()">
+</tr>
+<tr>
+<td><center>Landline Number</center></td>
+<td><center><input type="text" name="landlinenum_txt" maxlength="11" onkeypress="numeric()">
+</tr>
+<tr>
+<td><center>E-mail Address</center></td>
+<td><center><input type="email" name="email_txt">
+</tr>
+
+
+</table>
+<br>
+<input type="submit" name="submit" value="submit">
+<input type="reset" name="reset" value="Clear">
+</form>
+</center>
+</div><br></div>
+</body>
+</html>

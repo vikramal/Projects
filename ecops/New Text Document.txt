@@ -1,0 +1,20 @@
+<%@ page import="java.sql.*" %>
+
+<%
+
+	String us=request.getParameter("username_txt");
+	String ename=request.getParameter("password_txt");	
+	String mobnum=request.getParameter("t3");
+
+	Class.forName("com.mysql.jdbc.Driver").newInstance();
+		
+	Connection con=DriverManager.getConnection("jdbc:mysql://localhost/emp","root","");
+
+	Statement st=con.createStatement();
+
+	String sql="insert into employee values('"+empid+"','"+ename+"','"+mobnum+"')";
+
+	st.executeUpdate(sql);
+	out.print("Record Saved Sucessfully.....");
+
+%>

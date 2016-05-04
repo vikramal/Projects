@@ -1,0 +1,26 @@
+create database ecops;
+
+use ecops;
+
+create table adminlogin
+(username text, password text);
+
+insert into adminlogin values("abc","abc");
+
+create table citizenreg
+(username text, password text, name text, gender text,
+fatchername text, address text, landmark text, city text, pincode text,
+nationality text, dob text, mobilenum text, landline text,
+email text, uoloadoc text, status text);
+
+create table complaint
+(username text, name text, cid text, cdate text,
+ps text, ctype text, cdet text, address text, status text);
+
+create table fir
+(firno text, psname text, crime text, act1 text, cdate text, date2 text,
+reason text, add1 text, suspect text, name text, fname text, dob text,
+nation text, proof text, proofid text, contact text, add2 text, status text);
+
+create table policestation
+(pid text, area text, zone text, head text, contactnum text, address text);

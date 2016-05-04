@@ -1,0 +1,2339 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F1400844-E3C4-424F-9CC5-89816F5AE6F6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>dcoffice</RootNamespace>
+    <AssemblyName>dcoffice</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="GMailSend, Version=0.1.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="a1DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>a1DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="a2DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>a2DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="a3DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>a3DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="aa1DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>aa1DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="aa2DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>aa2DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="about.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="about.Designer.cs">
+      <DependentUpon>about.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>adDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="addemp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addemp.Designer.cs">
+      <DependentUpon>addemp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addv1DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>addv1DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="addvDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>addvDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="addvillage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addvillage.Designer.cs">
+      <DependentUpon>addvillage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addvillageDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>addvillageDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="addvillagehos1DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>addvillagehos1DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="addvillagehos2DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>addvillagehos2DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="addvillDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>addvillDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="addvillpanchDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>addvillpanchDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="adminhome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminhome.Designer.cs">
+      <DependentUpon>adminhome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="aenDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>aenDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="agri1DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>agri1DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="agriculture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="agriculture.Designer.cs">
+      <DependentUpon>agriculture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="agriDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>agriDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="avill1DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>avill1DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="avill2DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>avill2DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="boomireport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="boomireport.Designer.cs">
+      <DependentUpon>boomireport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="boomiviews.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="boomiviews.Designer.cs">
+      <DependentUpon>boomiviews.cs</DependentUpon>
+    </Compile>
+    <Compile Include="budget.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="budget.Designer.cs">
+      <DependentUpon>budget.cs</DependentUpon>
+    </Compile>
+    <Compile Include="budget1DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>budget1DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="budgetDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>budgetDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="budgetreport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="budgetreport.Designer.cs">
+      <DependentUpon>budgetreport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="budgetview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="budgetview.Designer.cs">
+      <DependentUpon>budgetview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="conversionDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>conversionDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dclogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dclogin.Designer.cs">
+      <DependentUpon>dclogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dcloginDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dcloginDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dcofficeDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dcofficeDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dcofficeDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dcofficeDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="denotiDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>denotiDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="denotifDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>denotifDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="denotification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="denotification.Designer.cs">
+      <DependentUpon>denotification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="disDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>disDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="districtaddDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>districtaddDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="districtcomboboxupdateDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>districtcomboboxupdateDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="districtdetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="districtdetails.Designer.cs">
+      <DependentUpon>districtdetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="districtupdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="districtupdate.Designer.cs">
+      <DependentUpon>districtupdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="districtupdateDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>districtupdateDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="eDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>eDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="egrant1DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>egrant1DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="egrantDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>egrantDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="electiondetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="electiondetails.Designer.cs">
+      <DependentUpon>electiondetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="electiondetailsautoDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>electiondetailsautoDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="electiondetailssaveDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>electiondetailssaveDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="electionreport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="electionreport.Designer.cs">
+      <DependentUpon>electionreport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="empDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>empDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="empdel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="empdel.Designer.cs">
+      <DependentUpon>empdel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employee.Designer.cs">
+      <DependentUpon>employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="employee1DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>employee1DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="employeeDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>employeeDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="employeereport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employeereport.Designer.cs">
+      <DependentUpon>employeereport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="employeeview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employeeview.Designer.cs">
+      <DependentUpon>employeeview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="empupautoDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>empupautoDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="empupdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="empupdate.Designer.cs">
+      <DependentUpon>empupdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="endonmentDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>endonmentDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="endowmentreports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="endowmentreports.Designer.cs">
+      <DependentUpon>endowmentreports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="endowmentview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="endowmentview.Designer.cs">
+      <DependentUpon>endowmentview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="endowmentviewDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>endowmentviewDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="gDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="grant1DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>grant1DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="grantDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>grantDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="grants.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="grants.Designer.cs">
+      <DependentUpon>grants.cs</DependentUpon>
+    </Compile>
+    <Compile Include="grants1DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>grants1DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="homepage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="homepage.Designer.cs">
+      <DependentUpon>homepage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hospautoDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>hospautoDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="hospital.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hospital.Designer.cs">
+      <DependentUpon>hospital.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hospitalDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>hospitalDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="landallocaDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>landallocaDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="landallocation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="landallocation.Designer.cs">
+      <DependentUpon>landallocation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="landallocationDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>landallocationDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="landconversion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="landconversion.Designer.cs">
+      <DependentUpon>landconversion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="landconvertionviewDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>landconvertionviewDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="landcovertionviewDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>landcovertionviewDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="landdenotifDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>landdenotifDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="landlaDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>landlaDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="landnotDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>landnotDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="landnotifcationautoDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>landnotifcationautoDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="landnotifcautoDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>landnotifcautoDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="landnotification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="landnotification.Designer.cs">
+      <DependentUpon>landnotification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="landnotificationDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>landnotificationDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="landnotificationsaveDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>landnotificationsaveDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="landnotifiDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>landnotifiDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="loading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loading.Designer.cs">
+      <DependentUpon>loading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loading2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loading2.Designer.cs">
+      <DependentUpon>loading2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login2DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Login2DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="login3DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>login3DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="login4DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>login4DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="login5DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>login5DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="login6DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>login6DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="loginDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>loginDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="loginDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>loginDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="mail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mail.Designer.cs">
+      <DependentUpon>mail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mainlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainlogin.Designer.cs">
+      <DependentUpon>mainlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="nic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nic.Designer.cs">
+      <DependentUpon>nic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="nicDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>nicDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="nomination.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nomination.Designer.cs">
+      <DependentUpon>nomination.cs</DependentUpon>
+    </Compile>
+    <Compile Include="nominationautogenDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>nominationautogenDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="nominationcomboDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>nominationcomboDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="nominationDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>nominationDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="nominationelectionDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>nominationelectionDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="panchayatreport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="panchayatreport.Designer.cs">
+      <DependentUpon>panchayatreport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="panchayatview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="panchayatview.Designer.cs">
+      <DependentUpon>panchayatview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="about.resx">
+      <DependentUpon>about.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addemp.resx">
+      <DependentUpon>addemp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addvillage.resx">
+      <DependentUpon>addvillage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminhome.resx">
+      <DependentUpon>adminhome.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="agriculture.resx">
+      <DependentUpon>agriculture.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="agriculturereport.rdlc" />
+    <EmbeddedResource Include="boomireport.resx">
+      <DependentUpon>boomireport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="boomiviews.resx">
+      <DependentUpon>boomiviews.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="budget.resx">
+      <DependentUpon>budget.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="budgetreport.rdlc" />
+    <EmbeddedResource Include="budgetreport.resx">
+      <DependentUpon>budgetreport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="budgetview.resx">
+      <DependentUpon>budgetview.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dclogin.resx">
+      <DependentUpon>dclogin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="denotification.resx">
+      <DependentUpon>denotification.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="districtdetails.resx">
+      <DependentUpon>districtdetails.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="districtupdate.resx">
+      <DependentUpon>districtupdate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="electiondetails.resx">
+      <DependentUpon>electiondetails.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="electiondetailsreport.rdlc" />
+    <EmbeddedResource Include="electionreport.resx">
+      <DependentUpon>electionreport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="empdel.resx">
+      <DependentUpon>empdel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employee.resx">
+      <DependentUpon>employee.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employeedetalilsreport.rdlc" />
+    <EmbeddedResource Include="employeereport.resx">
+      <DependentUpon>employeereport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employeesalaryreport.rdlc" />
+    <EmbeddedResource Include="employeeview.resx">
+      <DependentUpon>employeeview.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="empupdate.resx">
+      <DependentUpon>empupdate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="endowmentreports.resx">
+      <DependentUpon>endowmentreports.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="endowmentview.resx">
+      <DependentUpon>endowmentview.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="endownmentreport.rdlc" />
+    <EmbeddedResource Include="grants.resx">
+      <DependentUpon>grants.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="grantsreport.rdlc" />
+    <EmbeddedResource Include="homepage.resx">
+      <DependentUpon>homepage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hospital.resx">
+      <DependentUpon>hospital.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hospitalreport.rdlc" />
+    <EmbeddedResource Include="landallocation.resx">
+      <DependentUpon>landallocation.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="landallocationreport.rdlc" />
+    <EmbeddedResource Include="landconversion.resx">
+      <DependentUpon>landconversion.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="landconvertionreport.rdlc" />
+    <EmbeddedResource Include="landdenotoficationreport.rdlc" />
+    <EmbeddedResource Include="landnotification.resx">
+      <DependentUpon>landnotification.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="landnotificationreport.rdlc" />
+    <EmbeddedResource Include="loading.resx">
+      <DependentUpon>loading.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loading2.resx">
+      <DependentUpon>loading2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mail.resx">
+      <DependentUpon>mail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainlogin.resx">
+      <DependentUpon>mainlogin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nic.resx">
+      <DependentUpon>nic.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nomination.resx">
+      <DependentUpon>nomination.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nominationreport.rdlc" />
+    <EmbeddedResource Include="panchayatreport.resx">
+      <DependentUpon>panchayatreport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="panchayatview.resx">
+      <DependentUpon>panchayatview.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rejection.resx">
+      <DependentUpon>rejection.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rejectionreport.rdlc" />
+    <EmbeddedResource Include="road.resx">
+      <DependentUpon>road.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="roadreport.rdlc" />
+    <EmbeddedResource Include="salary.resx">
+      <DependentUpon>salary.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tenderapply.resx">
+      <DependentUpon>tenderapply.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tenderapplyreport.rdlc" />
+    <EmbeddedResource Include="tenderapproval.resx">
+      <DependentUpon>tenderapproval.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tenderapprovalreport.rdlc" />
+    <EmbeddedResource Include="tenderpublish.resx">
+      <DependentUpon>tenderpublish.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tenderpublishreport.rdlc" />
+    <EmbeddedResource Include="tenderreject.resx">
+      <DependentUpon>tenderreject.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tenderrejectreport.rdlc" />
+    <EmbeddedResource Include="tenderreport.resx">
+      <DependentUpon>tenderreport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tenderview.resx">
+      <DependentUpon>tenderview.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="townpanchdetails.resx">
+      <DependentUpon>townpanchdetails.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="townupdate.resx">
+      <DependentUpon>townupdate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updatevillpanch.resx">
+      <DependentUpon>updatevillpanch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updemppass.resx">
+      <DependentUpon>updemppass.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="villagepanch.resx">
+      <DependentUpon>villagepanch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="a1DataSet2.xsc">
+      <DependentUpon>a1DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="a1DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>a1DataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="a1DataSet2.xss">
+      <DependentUpon>a1DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="a2DataSet2.xsc">
+      <DependentUpon>a2DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="a2DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>a2DataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="a2DataSet2.xss">
+      <DependentUpon>a2DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="a3DataSet2.xsc">
+      <DependentUpon>a3DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="a3DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>a3DataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="a3DataSet2.xss">
+      <DependentUpon>a3DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="aa1DataSet2.xsc">
+      <DependentUpon>aa1DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="aa1DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>aa1DataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="aa1DataSet2.xss">
+      <DependentUpon>aa1DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="aa2DataSet2.xsc">
+      <DependentUpon>aa2DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="aa2DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>aa2DataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="aa2DataSet2.xss">
+      <DependentUpon>aa2DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="adDataSet2.xsc">
+      <DependentUpon>adDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="adDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>adDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="adDataSet2.xss">
+      <DependentUpon>adDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="addv1DataSet2.xsc">
+      <DependentUpon>addv1DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="addv1DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>addv1DataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="addv1DataSet2.xss">
+      <DependentUpon>addv1DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="addvDataSet2.xsc">
+      <DependentUpon>addvDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="addvDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>addvDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="addvDataSet2.xss">
+      <DependentUpon>addvDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="addvillageDataSet2.xsc">
+      <DependentUpon>addvillageDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="addvillageDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>addvillageDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="addvillageDataSet2.xss">
+      <DependentUpon>addvillageDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="addvillagehos1DataSet2.xsc">
+      <DependentUpon>addvillagehos1DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="addvillagehos1DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>addvillagehos1DataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="addvillagehos1DataSet2.xss">
+      <DependentUpon>addvillagehos1DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="addvillagehos2DataSet2.xsc">
+      <DependentUpon>addvillagehos2DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="addvillagehos2DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>addvillagehos2DataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="addvillagehos2DataSet2.xss">
+      <DependentUpon>addvillagehos2DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="addvillDataSet2.xsc">
+      <DependentUpon>addvillDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="addvillDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>addvillDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="addvillDataSet2.xss">
+      <DependentUpon>addvillDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="addvillpanchDataSet2.xsc">
+      <DependentUpon>addvillpanchDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="addvillpanchDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>addvillpanchDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="addvillpanchDataSet2.xss">
+      <DependentUpon>addvillpanchDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="aenDataSet2.xsc">
+      <DependentUpon>aenDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="aenDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>aenDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="aenDataSet2.xss">
+      <DependentUpon>aenDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="agri1DataSet2.xsc">
+      <DependentUpon>agri1DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="agri1DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>agri1DataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="agri1DataSet2.xss">
+      <DependentUpon>agri1DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="agriDataSet2.xsc">
+      <DependentUpon>agriDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="agriDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>agriDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="agriDataSet2.xss">
+      <DependentUpon>agriDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="app.config" />
+    <None Include="avill1DataSet2.xsc">
+      <DependentUpon>avill1DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="avill1DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>avill1DataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="avill1DataSet2.xss">
+      <DependentUpon>avill1DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="avill2DataSet2.xsc">
+      <DependentUpon>avill2DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="avill2DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>avill2DataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="avill2DataSet2.xss">
+      <DependentUpon>avill2DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="budget1DataSet2.xsc">
+      <DependentUpon>budget1DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="budget1DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>budget1DataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="budget1DataSet2.xss">
+      <DependentUpon>budget1DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="budgetDataSet2.xsc">
+      <DependentUpon>budgetDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="budgetDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>budgetDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="budgetDataSet2.xss">
+      <DependentUpon>budgetDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="conversionDataSet2.xsc">
+      <DependentUpon>conversionDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="conversionDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>conversionDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="conversionDataSet2.xss">
+      <DependentUpon>conversionDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="dcloginDataSet1.xsc">
+      <DependentUpon>dcloginDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="dcloginDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dcloginDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dcloginDataSet1.xss">
+      <DependentUpon>dcloginDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="dcofficeDataSet.xsc">
+      <DependentUpon>dcofficeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="dcofficeDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dcofficeDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dcofficeDataSet.xss">
+      <DependentUpon>dcofficeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="dcofficeDataSet1.xsc">
+      <DependentUpon>dcofficeDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="dcofficeDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dcofficeDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dcofficeDataSet1.xss">
+      <DependentUpon>dcofficeDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="denotiDataSet2.xsc">
+      <DependentUpon>denotiDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="denotiDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>denotiDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="denotiDataSet2.xss">
+      <DependentUpon>denotiDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="denotifDataSet2.xsc">
+      <DependentUpon>denotifDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="denotifDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>denotifDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="denotifDataSet2.xss">
+      <DependentUpon>denotifDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="disDataSet2.xsc">
+      <DependentUpon>disDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="disDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>disDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="disDataSet2.xss">
+      <DependentUpon>disDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="districtaddDataSet1.xsc">
+      <DependentUpon>districtaddDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="districtaddDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>districtaddDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="districtaddDataSet1.xss">
+      <DependentUpon>districtaddDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="districtcomboboxupdateDataSet1.xsc">
+      <DependentUpon>districtcomboboxupdateDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="districtcomboboxupdateDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>districtcomboboxupdateDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="districtcomboboxupdateDataSet1.xss">
+      <DependentUpon>districtcomboboxupdateDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="districtupdateDataSet1.xsc">
+      <DependentUpon>districtupdateDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="districtupdateDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>districtupdateDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="districtupdateDataSet1.xss">
+      <DependentUpon>districtupdateDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="eDataSet2.xsc">
+      <DependentUpon>eDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="eDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>eDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="eDataSet2.xss">
+      <DependentUpon>eDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="egrant1DataSet2.xsc">
+      <DependentUpon>egrant1DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="egrant1DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>egrant1DataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="egrant1DataSet2.xss">
+      <DependentUpon>egrant1DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="egrantDataSet2.xsc">
+      <DependentUpon>egrantDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="egrantDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>egrantDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="egrantDataSet2.xss">
+      <DependentUpon>egrantDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="electiondetailsautoDataSet2.xsc">
+      <DependentUpon>electiondetailsautoDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="electiondetailsautoDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>electiondetailsautoDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="electiondetailsautoDataSet2.xss">
+      <DependentUpon>electiondetailsautoDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="electiondetailssaveDataSet2.xsc">
+      <DependentUpon>electiondetailssaveDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="electiondetailssaveDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>electiondetailssaveDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="electiondetailssaveDataSet2.xss">
+      <DependentUpon>electiondetailssaveDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="empDataSet2.xsc">
+      <DependentUpon>empDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="empDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>empDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="empDataSet2.xss">
+      <DependentUpon>empDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="employee1DataSet2.xsc">
+      <DependentUpon>employee1DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="employee1DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>employee1DataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="employee1DataSet2.xss">
+      <DependentUpon>employee1DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="employeeDataSet2.xsc">
+      <DependentUpon>employeeDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="employeeDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>employeeDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="employeeDataSet2.xss">
+      <DependentUpon>employeeDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="empupautoDataSet2.xsc">
+      <DependentUpon>empupautoDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="empupautoDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>empupautoDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="empupautoDataSet2.xss">
+      <DependentUpon>empupautoDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="endonmentDataSet2.xsc">
+      <DependentUpon>endonmentDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="endonmentDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>endonmentDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="endonmentDataSet2.xss">
+      <DependentUpon>endonmentDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="endowmentviewDataSet2.xsc">
+      <DependentUpon>endowmentviewDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="endowmentviewDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>endowmentviewDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="endowmentviewDataSet2.xss">
+      <DependentUpon>endowmentviewDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="gDataSet2.xsc">
+      <DependentUpon>gDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="gDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gDataSet2.xss">
+      <DependentUpon>gDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="grant1DataSet2.xsc">
+      <DependentUpon>grant1DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="grant1DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>grant1DataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="grant1DataSet2.xss">
+      <DependentUpon>grant1DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="grantDataSet2.xsc">
+      <DependentUpon>grantDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="grantDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>grantDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="grantDataSet2.xss">
+      <DependentUpon>grantDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="grants1DataSet2.xsc">
+      <DependentUpon>grants1DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="grants1DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>grants1DataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="grants1DataSet2.xss">
+      <DependentUpon>grants1DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="hospautoDataSet2.xsc">
+      <DependentUpon>hospautoDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="hospautoDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>hospautoDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="hospautoDataSet2.xss">
+      <DependentUpon>hospautoDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="hospitalDataSet2.xsc">
+      <DependentUpon>hospitalDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="hospitalDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>hospitalDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="hospitalDataSet2.xss">
+      <DependentUpon>hospitalDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="landallocaDataSet2.xsc">
+      <DependentUpon>landallocaDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="landallocaDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>landallocaDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="landallocaDataSet2.xss">
+      <DependentUpon>landallocaDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="landallocationDataSet2.xsc">
+      <DependentUpon>landallocationDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="landallocationDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>landallocationDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="landallocationDataSet2.xss">
+      <DependentUpon>landallocationDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="landconvertionviewDataSet2.xsc">
+      <DependentUpon>landconvertionviewDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="landconvertionviewDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>landconvertionviewDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="landconvertionviewDataSet2.xss">
+      <DependentUpon>landconvertionviewDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="landcovertionviewDataSet2.xsc">
+      <DependentUpon>landcovertionviewDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="landcovertionviewDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>landcovertionviewDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="landcovertionviewDataSet2.xss">
+      <DependentUpon>landcovertionviewDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="landdenotifDataSet2.xsc">
+      <DependentUpon>landdenotifDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="landdenotifDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>landdenotifDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="landdenotifDataSet2.xss">
+      <DependentUpon>landdenotifDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="landlaDataSet2.xsc">
+      <DependentUpon>landlaDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="landlaDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>landlaDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="landlaDataSet2.xss">
+      <DependentUpon>landlaDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="landnotDataSet2.xsc">
+      <DependentUpon>landnotDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="landnotDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>landnotDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="landnotDataSet2.xss">
+      <DependentUpon>landnotDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="landnotifcationautoDataSet2.xsc">
+      <DependentUpon>landnotifcationautoDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="landnotifcationautoDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>landnotifcationautoDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="landnotifcationautoDataSet2.xss">
+      <DependentUpon>landnotifcationautoDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="landnotifcautoDataSet2.xsc">
+      <DependentUpon>landnotifcautoDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="landnotifcautoDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>landnotifcautoDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="landnotifcautoDataSet2.xss">
+      <DependentUpon>landnotifcautoDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="landnotificationDataSet2.xsc">
+      <DependentUpon>landnotificationDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="landnotificationDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>landnotificationDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="landnotificationDataSet2.xss">
+      <DependentUpon>landnotificationDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="landnotificationsaveDataSet2.xsc">
+      <DependentUpon>landnotificationsaveDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="landnotificationsaveDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>landnotificationsaveDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="landnotificationsaveDataSet2.xss">
+      <DependentUpon>landnotificationsaveDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="landnotifiDataSet2.xsc">
+      <DependentUpon>landnotifiDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="landnotifiDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>landnotifiDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="landnotifiDataSet2.xss">
+      <DependentUpon>landnotifiDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Login2DataSet2.xsc">
+      <DependentUpon>Login2DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Login2DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Login2DataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Login2DataSet2.xss">
+      <DependentUpon>Login2DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="login3DataSet2.xsc">
+      <DependentUpon>login3DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="login3DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>login3DataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="login3DataSet2.xss">
+      <DependentUpon>login3DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="login4DataSet2.xsc">
+      <DependentUpon>login4DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="login4DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>login4DataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="login4DataSet2.xss">
+      <DependentUpon>login4DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="login5DataSet2.xsc">
+      <DependentUpon>login5DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="login5DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>login5DataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="login5DataSet2.xss">
+      <DependentUpon>login5DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="login6DataSet2.xsc">
+      <DependentUpon>login6DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="login6DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>login6DataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="login6DataSet2.xss">
+      <DependentUpon>login6DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="loginDataSet.xsc">
+      <DependentUpon>loginDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="loginDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>loginDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="loginDataSet.xss">
+      <DependentUpon>loginDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="loginDataSet2.xsc">
+      <DependentUpon>loginDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="loginDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>loginDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="loginDataSet2.xss">
+      <DependentUpon>loginDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="nicDataSet2.xsc">
+      <DependentUpon>nicDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="nicDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>nicDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="nicDataSet2.xss">
+      <DependentUpon>nicDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="nominationautogenDataSet2.xsc">
+      <DependentUpon>nominationautogenDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="nominationautogenDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>nominationautogenDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="nominationautogenDataSet2.xss">
+      <DependentUpon>nominationautogenDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="nominationcomboDataSet2.xsc">
+      <DependentUpon>nominationcomboDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="nominationcomboDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>nominationcomboDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="nominationcomboDataSet2.xss">
+      <DependentUpon>nominationcomboDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="nominationDataSet2.xsc">
+      <DependentUpon>nominationDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="nominationDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>nominationDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="nominationDataSet2.xss">
+      <DependentUpon>nominationDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="nominationelectionDataSet2.xsc">
+      <DependentUpon>nominationelectionDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="nominationelectionDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>nominationelectionDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="nominationelectionDataSet2.xss">
+      <DependentUpon>nominationelectionDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="rejectionDataSet2.xsc">
+      <DependentUpon>rejectionDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="rejectionDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>rejectionDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="rejectionDataSet2.xss">
+      <DependentUpon>rejectionDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="road1DataSet2.xsc">
+      <DependentUpon>road1DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="road1DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>road1DataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="road1DataSet2.xss">
+      <DependentUpon>road1DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="roadDataSet2.xsc">
+      <DependentUpon>roadDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="roadDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>roadDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="roadDataSet2.xss">
+      <DependentUpon>roadDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="salaryviewDataSet2.xsc">
+      <DependentUpon>salaryviewDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="salaryviewDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>salaryviewDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="salaryviewDataSet2.xss">
+      <DependentUpon>salaryviewDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="salautoDataSet2.xsc">
+      <DependentUpon>salautoDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="salautoDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>salautoDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="salautoDataSet2.xss">
+      <DependentUpon>salautoDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="salsaveDataSet2.xsc">
+      <DependentUpon>salsaveDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="salsaveDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>salsaveDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="salsaveDataSet2.xss">
+      <DependentUpon>salsaveDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="tenapplyautoDataSet2.xsc">
+      <DependentUpon>tenapplyautoDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="tenapplyautoDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tenapplyautoDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tenapplyautoDataSet2.xss">
+      <DependentUpon>tenapplyautoDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="tenderappDataSet2.xsc">
+      <DependentUpon>tenderappDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="tenderappDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tenderappDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tenderappDataSet2.xss">
+      <DependentUpon>tenderappDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="tenderapply1DataSet2.xsc">
+      <DependentUpon>tenderapply1DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="tenderapply1DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tenderapply1DataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tenderapply1DataSet2.xss">
+      <DependentUpon>tenderapply1DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="tenderapply2DataSet2.xsc">
+      <DependentUpon>tenderapply2DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="tenderapply2DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tenderapply2DataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tenderapply2DataSet2.xss">
+      <DependentUpon>tenderapply2DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="tenderapprovalautoDataSet2.xsc">
+      <DependentUpon>tenderapprovalautoDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="tenderapprovalautoDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tenderapprovalautoDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tenderapprovalautoDataSet2.xss">
+      <DependentUpon>tenderapprovalautoDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="tenderapprovalviewDataSet2.xsc">
+      <DependentUpon>tenderapprovalviewDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="tenderapprovalviewDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tenderapprovalviewDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tenderapprovalviewDataSet2.xss">
+      <DependentUpon>tenderapprovalviewDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="tenderapprovapplyDataSet2.xsc">
+      <DependentUpon>tenderapprovapplyDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="tenderapprovapplyDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tenderapprovapplyDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tenderapprovapplyDataSet2.xss">
+      <DependentUpon>tenderapprovapplyDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="tenderpublish1DataSet2.xsc">
+      <DependentUpon>tenderpublish1DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="tenderpublish1DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tenderpublish1DataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tenderpublish1DataSet2.xss">
+      <DependentUpon>tenderpublish1DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="tenderpublish2DataSet2.xsc">
+      <DependentUpon>tenderpublish2DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="tenderpublish2DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tenderpublish2DataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tenderpublish2DataSet2.xss">
+      <DependentUpon>tenderpublish2DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="tenderpublishDataSet2.xsc">
+      <DependentUpon>tenderpublishDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="tenderpublishDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tenderpublishDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tenderpublishDataSet2.xss">
+      <DependentUpon>tenderpublishDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="tenderrejDataSet2.xsc">
+      <DependentUpon>tenderrejDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="tenderrejDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tenderrejDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tenderrejDataSet2.xss">
+      <DependentUpon>tenderrejDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="tenderrejectviewDataSet2.xsc">
+      <DependentUpon>tenderrejectviewDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="tenderrejectviewDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tenderrejectviewDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tenderrejectviewDataSet2.xss">
+      <DependentUpon>tenderrejectviewDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="townaddnewDataSet1.xsc">
+      <DependentUpon>townaddnewDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="townaddnewDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>townaddnewDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="townaddnewDataSet1.xss">
+      <DependentUpon>townaddnewDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="towncomboDataSet1.xsc">
+      <DependentUpon>towncomboDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="towncomboDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>towncomboDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="towncomboDataSet1.xss">
+      <DependentUpon>towncomboDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="towndeleteDataSet1.xsc">
+      <DependentUpon>towndeleteDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="towndeleteDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>towndeleteDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="towndeleteDataSet1.xss">
+      <DependentUpon>towndeleteDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="towntalukDataSet2.xsc">
+      <DependentUpon>towntalukDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="towntalukDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>towntalukDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="towntalukDataSet2.xss">
+      <DependentUpon>towntalukDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="townttDataSet1.xsc">
+      <DependentUpon>townttDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="townttDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>townttDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="townttDataSet1.xss">
+      <DependentUpon>townttDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="townupDataSet1.xsc">
+      <DependentUpon>townupDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="townupDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>townupDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="townupDataSet1.xss">
+      <DependentUpon>townupDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="townupdateDataSet1.xsc">
+      <DependentUpon>townupdateDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="townupdateDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>townupdateDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="townupdateDataSet1.xss">
+      <DependentUpon>townupdateDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="townupdatedelteDataSet1.xsc">
+      <DependentUpon>townupdatedelteDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="townupdatedelteDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>townupdatedelteDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="townupdatedelteDataSet1.xss">
+      <DependentUpon>townupdatedelteDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="update1dcofficeDataSet.xsc">
+      <DependentUpon>update1dcofficeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="update1dcofficeDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>update1dcofficeDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="update1dcofficeDataSet.xss">
+      <DependentUpon>update1dcofficeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="updatedistrictcomboDataSet1.xsc">
+      <DependentUpon>updatedistrictcomboDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="updatedistrictcomboDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>updatedistrictcomboDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="updatedistrictcomboDataSet1.xss">
+      <DependentUpon>updatedistrictcomboDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="updatevillagepanchDataSet.xsc">
+      <DependentUpon>updatevillagepanchDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="updatevillagepanchDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>updatevillagepanchDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="updatevillagepanchDataSet.xss">
+      <DependentUpon>updatevillagepanchDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="villagepanchadcofficeDataSet1.xsc">
+      <DependentUpon>villagepanchadcofficeDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="villagepanchadcofficeDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>villagepanchadcofficeDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="villagepanchadcofficeDataSet1.xss">
+      <DependentUpon>villagepanchadcofficeDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="villagepanchayatDataSet.xsc">
+      <DependentUpon>villagepanchayatDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="villagepanchayatDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>villagepanchayatDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="villagepanchayatDataSet.xss">
+      <DependentUpon>villagepanchayatDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="villpanchadcofficeDataSet1.xsc">
+      <DependentUpon>villpanchadcofficeDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="villpanchadcofficeDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>villpanchadcofficeDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="villpanchadcofficeDataSet1.xss">
+      <DependentUpon>villpanchadcofficeDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="villpanchdcofficeDataSet1.xsc">
+      <DependentUpon>villpanchdcofficeDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="villpanchdcofficeDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>villpanchdcofficeDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="villpanchdcofficeDataSet1.xss">
+      <DependentUpon>villpanchdcofficeDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="villupdcofficeDataSet1.xsc">
+      <DependentUpon>villupdcofficeDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="villupdcofficeDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>villupdcofficeDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="villupdcofficeDataSet1.xss">
+      <DependentUpon>villupdcofficeDataSet1.xsd</DependentUpon>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="rejection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rejection.Designer.cs">
+      <DependentUpon>rejection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rejectionDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rejectionDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="road.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="road.Designer.cs">
+      <DependentUpon>road.cs</DependentUpon>
+    </Compile>
+    <Compile Include="road1DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>road1DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="roadDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>roadDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="salary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="salary.Designer.cs">
+      <DependentUpon>salary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="salaryviewDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>salaryviewDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="salautoDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>salautoDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="salsaveDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>salsaveDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tenapplyautoDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tenapplyautoDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tenderappDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tenderappDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tenderapply.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tenderapply.Designer.cs">
+      <DependentUpon>tenderapply.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tenderapply1DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tenderapply1DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tenderapply2DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tenderapply2DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tenderapproval.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tenderapproval.Designer.cs">
+      <DependentUpon>tenderapproval.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tenderapprovalautoDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tenderapprovalautoDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tenderapprovalviewDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tenderapprovalviewDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tenderapprovapplyDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tenderapprovapplyDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tenderpublish.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tenderpublish.Designer.cs">
+      <DependentUpon>tenderpublish.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tenderpublish1DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tenderpublish1DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tenderpublish2DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tenderpublish2DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tenderpublishDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tenderpublishDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tenderrejDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tenderrejDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tenderreject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tenderreject.Designer.cs">
+      <DependentUpon>tenderreject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tenderrejectviewDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tenderrejectviewDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tenderreport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tenderreport.Designer.cs">
+      <DependentUpon>tenderreport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tenderview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tenderview.Designer.cs">
+      <DependentUpon>tenderview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="townaddnewDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>townaddnewDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="towncomboDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>towncomboDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="towndeleteDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>towndeleteDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="townpanchdetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="townpanchdetails.Designer.cs">
+      <DependentUpon>townpanchdetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="towntalukDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>towntalukDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="townttDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>townttDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="townupDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>townupDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="townupdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="townupdate.Designer.cs">
+      <DependentUpon>townupdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="townupdateDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>townupdateDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="townupdatedelteDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>townupdatedelteDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="update1dcofficeDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>update1dcofficeDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="updatedistrictcomboDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>updatedistrictcomboDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="updatevillagepanchDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>updatevillagepanchDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="updatevillpanch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updatevillpanch.Designer.cs">
+      <DependentUpon>updatevillpanch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="updemppass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updemppass.Designer.cs">
+      <DependentUpon>updemppass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="villagepanch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="villagepanch.Designer.cs">
+      <DependentUpon>villagepanch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="villagepanchadcofficeDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>villagepanchadcofficeDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="villagepanchayatDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>villagepanchayatDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="villpanchadcofficeDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>villpanchadcofficeDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="villpanchdcofficeDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>villpanchdcofficeDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="villupdcofficeDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>villupdcofficeDataSet1.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GMailSend.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,191 @@
+<html>
+	<head>
+		<title>BANGALORE POLICE ORGANIZATION - Registration Form </title>
+	</head>
+	
+<script language="javascript">
+
+
+function validate(x)
+{
+	if(x.user.value=="")
+	{
+		alert("Please choose your Username");
+		x.user.focus();
+		return false;
+	}
+	if(x.pass.value=="")
+	{
+		alert("Password cannot be left blank");
+		x.pass.focus();
+		return false;
+	}
+	if(x.pass.value.length<6)
+	{
+		alert("Password must be atleast 6 characters long");
+		x.pass.focus();
+		return false;
+	}
+		
+	if(x.repass.value=="")
+	{
+		alert("Re-Enter Password");
+		x.repass.focus();
+		return false;
+	}
+	if(!(x.repass.value==x.pass.value))
+	{
+		alert("Passwords do not match");
+		x.repass.focus();
+		return false;
+	}
+	if(x.name.value=="")
+	{
+		alert("Name cannot be left blank");
+		x.name.focus();
+		return false;
+	}
+	if(x.fname.value=="")
+	{
+		alert("Father's Name cannot be left blank");
+		x.fname.focus();
+		return false;
+	}
+	if(x.add.value=="")
+	{
+		alert("Please enter your Address");
+		x.add.focus();
+		return false;
+	}
+	if(x.landmark.value=="")
+	{
+		alert("Specify the nearest landmark");
+		x.landmark.focus();
+		return false;
+	}
+	if(x.city.value=="")
+	{
+		alert("Please enter the City");
+		x.city.focus();
+		return false;
+	}
+	if(x.pin.value=="")
+	{
+		alert("Pin Code cannot be left blank");
+		x.pin.focus();
+		return false;
+	}
+	if(x.pin.value.length<6)
+	{
+		alert("Pin Code you entered is Incorrect");
+		x.pin.focus();
+		return false;
+	}
+	if(x.nation.value=="")
+	{
+		alert("Specify your Nationality");
+		x.nation.focus();
+		return false;
+	}
+	if(x.mno.value=="")
+	{
+		alert("Please enter your Mobile Number");
+		x.mno.focus();
+		return false;
+	}
+	if(x.mno.value.length<10)
+	{
+		alert("Incorrect Mobile No., Enter again");
+		x.mno.focus();
+		return false;
+	}
+	if(x.email.value=="")
+	{
+		alert("Please enter E-Mail ID");
+		x.email.focus();
+		return false;
+	}
+	if (x.email.value.indexOf('@')==-1 || x.email.value.indexOf('.')==-1 || x.email.value.indexOf(' ')!=-1 || x.email.value.lastIndexOf('@')>x.email.value.lastIndexOf('.') || x.email.value.indexOf('@')!=x.email.value.lastIndexOf('@') || x.email.value.indexOf('@')==0)
+	{ 
+		alert('This email id does not appear to be a valid one.')
+		x.email.focus()
+		return false;
+	}
+	
+return true;
+}
+
+function numeric()
+{
+	if(!((event.keyCode>=48)&&(event.keyCode<=57)))
+	{
+		alert("Enter only numbers");
+		event.keyCode=0;
+	}
+}
+
+function alphabets()
+{
+	if(!(((event.keyCode>65)&&(event.keyCode<=91))||((event.keyCode>=97)&&(event.keyCode<=122))||(event.keyCode==32)))
+	{
+		alert("Numbers & Special characters not allowed");
+		event.keyCode=0;
+	}
+	
+}
+</script>
+	
+<body background="pcb.jpg">
+<center>
+ <h3 style="text-align:center">REGISTRATION FORM</h3>
+	<font color="red" size="+1"><b>Username already exists, Please try again...</b></font>
+       
+
+<form name="regform" method="POST" action="citizenreg.jsp" onsubmit="return validate(this)">
+    <table cellspacing="2" cellpadding="2" border="1" style="background-color:lightcyan" width="30%">
+		<tr>
+			<td align="center"><font color="navy">Username:-</font></td>
+            <td align="center"><INPUT type="text" name="user" value='' maxlength="15"></td>
+		<tr>
+			<td align="center"><font color="navy">Password:-</font></td>
+			<td align="center"><input type="password" name="pass" value='' maxlength="15"/></td>
+		<tr>
+			<td align="center"><font color="navy">Re-Enter Password:-</font>
+			<td align="center"><input type="password" name="repass">
+		<tr>
+			<td align="center"><font color="navy">Name:-</font></td>
+            <td align="center"><input type="text" name="name" onkeypress="alphabets()">
+        <tr>
+            <td align="center"><font color="navy">Father Name:-</font></td>
+            <td align="center"><input type="text" name="fname" onkeypress="alphabets()"></td>
+        <tr>
+			<td align="center"><font color="navy">Address:-</font></td>
+            <td align="center"><textarea  cols="20" rows="6" name="add"></textarea>
+        <tr>
+            <td align="center"><font color="navy">Landmark:-</font></td>
+            <td align="center"><input type="text" name="landmark">
+		<tr>
+			<td align="center"><font color="navy">City:-</font></td>
+			<td align="center"><input type="text" name="city" onkeypress="alphabets()">
+		<tr>
+			<td align="center"><font color="navy">Pin Code:-</font>
+			<td align="center"><input type="text" name="pin" maxlength="6" onkeypress="numeric()">
+		<tr>
+			<td align="center"><font color="navy">Nationality:-</font>
+			<td align="center"><input type="text" name="nation" onkeypress="alphabets()">
+        <tr>
+			<td align="center"><font color="navy">Mobile No:-</font></td>
+			<td align="center"><input type="text" name="mno" maxlength="10" onkeypress="numeric()"></td>
+		<tr>
+			<td align="center"><font color="navy">E-Mail Address:-</font>
+			<td align="center"><input type="text" name="email">
+        <tr>
+			
+			<td colspan="2" align="center">
+			<input type="submit" name="s" value="Submit">
+			<input type="reset" name="r" value="Clear">  
+	</table>
+</form>
+</center>
+</body>
+</html>
